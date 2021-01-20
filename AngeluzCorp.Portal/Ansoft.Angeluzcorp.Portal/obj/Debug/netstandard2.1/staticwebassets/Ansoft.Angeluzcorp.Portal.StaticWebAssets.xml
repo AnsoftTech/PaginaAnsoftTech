@@ -1,4 +1,0 @@
-﻿<StaticWebAssets Version="1.0">
-  <ContentRoot BasePath="/" Path="F:\Pedro Abel\Proyectos\Github\AngeluzCorpWeb\AngeluzCorp.Portal\Ansoft.Angeluzcorp.Portal\bin\Debug\netstandard2.1\wwwroot\" />
-  <ContentRoot BasePath="_content/DevExpress.Blazor" Path="C:\Users\Pedro Abel\.nuget\packages\devexpress.blazor\20.1.7\build\..\staticwebassets\" />
-</StaticWebAssets>
