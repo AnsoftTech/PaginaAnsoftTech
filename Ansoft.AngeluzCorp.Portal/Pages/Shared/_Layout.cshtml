@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Angeluz Corp</title>
+    <meta name="description" content="Sitio corporativo de Holding" />
+    <meta name="keywords" content="Fabrica Software, Empresa Tecnologica, Tecnologia, Servicio, Desarrollo, sistemas, computadoras, hosting" />
+    <meta name="author" content="Ansoft Tech" />
+
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:url" content="" />
+    <meta name="twitter:card" content="" />
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/style.css" />
+    <link rel="stylesheet" href="~/css/icomoon.css" />
+    <link rel="stylesheet" href="~/lib/animate/animate.min.css" />
+    <link rel="stylesheet" href="~/lib/superfish/css/superfish.min.css" />
+
+    <script src="~/lib/modernizr/modernizr.js"></script>
+</head>
+<body>
+    
+    <div id="fh5co-wrapper">
+        <div id="fh5co-page">
+            <div class="fh5co-hero">
+                <div class="fh5co-overlay"></div>
+                <div class="fh5co-cover text-center" data-stellar-background-ratio="0.5" style="background-image: url(images/Cover_back_1.jpg);">
+                    <div class="desc">
+                        <div class="container">
+                            <div class="col-md-10 col-md-offset-1">
+                                <a href="index.html" id="main-logo">ANGELUZ CORP</a>
+                                <div class="animate-box">
+                                    <h2>Transformando el futuro</h2>
+                                    <p><a class="btn btn-primary btn-lg" href="#">Get Started</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <header id="fh5co-header-section" class="sticky-banner">
+                <div class="container">
+                    <div class="nav-header">
+                        <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle dark"><i></i></a>
+                        <h1 id="fh5co-logo"><a asp-area="" asp-page="/Index">ANGELUZ CORP</a></h1>
+                        <!-- START #fh5co-menu-wrap -->
+                        <nav id="fh5co-menu-wrap" role="navigation">
+                            <ul class="sf-menu" id="fh5co-primary-menu">
+                                <li class="active"><a asp-area="" asp-page="/Index">Home</a></li>
+                                <li>
+                                    <a href="#" class="fh5co-sub-ddown">Lineas de Negocios</a>
+                                    <ul class="fh5co-sub-menu">
+                                        <li><a href="#">ANSOFTTECH</a></li>
+                                        <li><a href="#">ANEDU</a></li>
+                                        <li><a href="#">ANIOT</a></li>
+                                        <li><a href="#">ANSHOP TIME</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="about.html">Nosotros</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="contact.html">Contactanos</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            @RenderBody()
+        </div>
+
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; @DateTime.Now.Year - Angeluz Corp
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/jquery-easing/jquery.easing.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/jquery.waypoints.min.js" asp-append-version="true"></script>
+    <script src="~/js/sticky.js" asp-append-version="true"></script>
+    <script src="~/lib/stellar/jquery.stellar.min.js"></script>
+    <script src="~/js/hoverIntent.js"></script>
+    <script src="~/lib/superfish/js/superfish.js"></script>
+    <script src="~/lib/magnific-popup.js/jquery.magnific-popup.min.js"></script>
+    <script src="~/js/magnific-popup-options.js" asp-append-version="true"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
